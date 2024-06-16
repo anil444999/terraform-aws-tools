@@ -31,7 +31,7 @@ module "jenkins_agent" {
 
 resource "aws_key_pair" "tools" {
   key_name   = "tools"
-  # you can paste the public key directly like this
+  #you can paste the public key directly like this 
   #public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMlFH0CJrsPnM21P7sCaiJ0R8jSCsaTm6jx7EaQBfxOu yerra@LAPTOP-CUS9THHT
   public_key = file("~/.ssh/tools.pub")
   # ~ means windows home directory
